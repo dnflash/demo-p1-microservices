@@ -1,0 +1,36 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: auth-service-deployment
+spec:
+  selector:
+    matchLabels:
+      app: auth-service
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: auth-service
+    spec:
+      containers:
+      - name: auth-service
+        image: dnflash/demo-p1-go-auth-service:v1
+        env:
+        - name: APP_AUTHDB
+          value: "mongodb://mongo-service:27017"
+        - name: APP_USERDB
+          value: "mongodb://mongo-service:27017"
+        - name: APP_SERVERADDRESS
+          value: "0.0.0.0:8080"
+        - name: APP_ACCESSTOKENSECRET
+          valueFrom:
+            secretKeyRef:
+              name: demo-secret
+              key: access-token-secret
+        - name: APP_REFRESHTOKENSECRET
+          valueFrom:
+            secretKeyRef:
+              name: demo-secret
+              key: refresh-token-secret
+        ports:
+        - containerPort: 8080

@@ -1,0 +1,2 @@
+{"_id":{"$oid":"6376320230c2c0bc2ee4b414"},"username":"admin","password":{"$binary":{"base64":"JDJhJDEwJHpONThIcFcuVm9jQWlmdm9jZk9oVi5YNjc0TkhvYjBaQi56aVpWRmRuQ1VlYkdlVUdMY2FX","subType":"00"}},"role":"admin","info":"This is an admin account"}
+{"_id":{"$oid":"6376338d44299e79077d0ec9"},"username":"user1","password":{"$binary":{"base64":"JDJhJDEwJHowcWwwam9wN0VHL3lWTE1CVzJpSnVTcjJuY1gybWZrTUowWHBjb2dmMVBZcHl6NFJXZ1hx","subType":"00"}},"role":"user","info":"This is a regular user account"}
