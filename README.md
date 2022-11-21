@@ -23,11 +23,11 @@ This will deploy:
 This is the output from `kubectl get all -o wide`:
 ![kubectl_output](images/kubectl_output.png)
  
-### Swagger
+### API Docs / Swagger
 
 Swagger UI is available at:
-- Auth Service: `<nodeIP>:31000/docs/swagger`
-- User Management Service: `<nodeIP>:32000/docs/swagger`
+- Auth Service: `<nodeIP>:31000/docs/swagger` [(Preview)](https://petstore.swagger.io/?url=https://raw.githubusercontent.com/dnflash/demo-p1-go-auth-service/main/docs/swagger.yaml)
+- User Management Service: `<nodeIP>:32000/docs/swagger` [(Preview)](https://petstore.swagger.io/?url=https://raw.githubusercontent.com/dnflash/demo-p1-go-user-management-service/main/docs/swagger.yaml)
  
 ### Demo
 
