@@ -1,0 +1,6 @@
+[submodule "services/demo-p1-go-auth-service"]
+	path = services/demo-p1-go-auth-service
+	url = https://github.com/dnflash/demo-p1-go-auth-service
+[submodule "services/demo-p1-go-user-management-service"]
+	path = services/demo-p1-go-user-management-service
+	url = https://github.com/dnflash/demo-p1-go-user-management-service
